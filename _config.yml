@@ -1,0 +1,23 @@
+# Site settings
+title: Vic Terek
+description: Resume
+url: "http://victerek.com"
+# baseurl: "" # the subpath of your site, e.g. /blog
+
+# Server config options
+livereload: true
+
+# User settings
+username: Vic Terek
+user_description: I'm a PPC Specialist, always searching for the next challenge; no task is too scary nor too difficult.</a>
+user_title: PPC Specialist
+email: victerek@gmail.com
+# twitter_username: lorem_ipsum
+# github_username:  lorem_ipsum
+# gplus_username:  lorem_ipsum
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
