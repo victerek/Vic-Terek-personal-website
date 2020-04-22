@@ -456,7 +456,9 @@ header .site-description {
     height: 100px;
     fill: #fff;
     -webkit-animation: pulse 1.3s infinite;
-    animation: pulse 1.3s infinite
+    animation: pulse 1.3s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
 }
 
 #about {
@@ -570,6 +572,27 @@ footer a {
     left: 50%;
     margin: 0 auto;
 }
+
+@media (max-width: 48em) {
+    .canvas-blog article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 30em) {
+    .canvas-blog article {
+        width: 70%;
+    }
+    body {
+        font-size: 105%;
+    }
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+
 
 .page-title {
     color: white;
