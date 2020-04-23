@@ -1,3 +1,4 @@
+Based on a Jekyll theme
 
 # Quick Setup
 
