@@ -251,10 +251,10 @@ header .site-description {
     .header-links .link {
         font-size: 0.5rem;
     }
-    header .site-description {
+    article header .site-description {
         font-size: 0.85rem;
     }
-    header .site-title {
+    article header .site-title {
         margin: 0;
         font-size: 1.9rem;
     }
