@@ -221,13 +221,13 @@ header .site-description {
 
 .down, .header-icons .icon {
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 
 .header-icons .icon {
     height: 20px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50%;
     transition: all .5s;
     width: 20px;
@@ -243,10 +243,10 @@ header .site-description {
 
 @media only screen and (min-width:48em) {
     .header-icons .icon {
-        width: 0.75rem;
-        height: 0.75rem;
-        font-size: 0.75rem;
-        line-height: 0.75rem;
+        width: 1.3em;
+        height: 1.3em;
+        font-size: 1.3em;
+        line-height: 1.3em;
     }
     #about {
         width: 80%;
