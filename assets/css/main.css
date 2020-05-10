@@ -243,10 +243,10 @@ header .site-description {
 
 @media only screen and (min-width:48em) {
     .header-icons .icon {
-        width: 1.3em;
-        height: 1.3em;
-        font-size: 1.3em;
-        line-height: 1.3em;
+        width: 1em;
+        height: 1em;
+        font-size: 1em;
+        line-height: 1em;
     }
     #about {
         width: 80%;
