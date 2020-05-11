@@ -224,7 +224,6 @@ header .site-description {
     text-align: center;
 }
 
-
 .header-icons .icon {
     height: 20px;
     padding: 15px;
@@ -386,10 +385,10 @@ footer a {
 }
 
 .page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75em;
 }
 
 .short-title {
@@ -422,13 +421,28 @@ footer a {
 
 /* make the article responsive for more phones */
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .canvas-blog article {
         width: 80%;
         font-size: 180%;
+    }
+    .page-title {
+        font-size: 3rem;
+    }
+    .author {
+        font-size: 1.7rem;
+    }
+    section>h2 {
+        font-size: 2.5rem;
+    }
+    .rsa-tips h3 {
+        font-size: 2rem;
+    }
+    .rsa-example figcaption {
+        font-size: 1.7rem;
+    }
+    figure img {
+        width: 100%;
     }
 }
 
@@ -473,173 +487,167 @@ button#to-the-top {
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
+a, a.visited {
+    color: inherit;
+    text-decoration: underline;
 }
 
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
+h1, h2, h3 {
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
 }
 
 h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1.5em;
+    word-break: break-all;
 }
 
 .callout {
-	border-radius: 3px;
-	padding: 1rem;
+    border-radius: 3px;
+    padding: 1rem;
 }
 
 figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
+    margin: 1.25em 0;
+    page-break-inside: avoid;
 }
 
 figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
+    opacity: 0.5;
+    font-size: 85%;
+    margin-top: 0.5em;
 }
 
 mark {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
+ol, ul {
+    margin: 0;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
 }
 
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
+li>ol:first-child, li>ul:first-child {
+    margin-block-start: 0.6em;
 }
 
-
-ul.toggle > li {
-	list-style: none;
+ul.toggle>li {
+    list-style: none;
 }
 
 ul {
-	padding-inline-start: 1.7em;
+    padding-inline-start: 1.7em;
 }
 
-ul > li {
-	padding-left: 0.1em;
-	padding-bottom: 0.4em;
+ul>li {
+    padding-left: 0.1em;
+    padding-bottom: 0.4em;
 }
 
 ol {
-	padding-inline-start: 1.6em;
+    padding-inline-start: 1.6em;
 }
 
-ol > li {
-	padding-left: 0.2em;
+ol>li {
+    padding-left: 0.2em;
 }
 
 .icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
 }
 
 img.icon {
-	border-radius: 3px;
+    border-radius: 3px;
 }
 
 .user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 0.5rem;
 }
 
 .user-icon-inner {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 .page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
 }
 
 .link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+    font-weight: 500;
 }
 
 p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .rsa-example {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
+    border: none;
+    margin: 1.5em 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
 }
 
 .callout {
-	background: rgb(160, 159, 125);
-	display: flex;
+    background: rgb(160, 159, 125);
+    display: flex;
 }
 
 .callout span {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .author {
-	font-size: 1.2rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75em;
 }
 
 .author:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .rsa-benefits em {
@@ -647,12 +655,12 @@ p {
 }
 
 .rsa-tips mark {
-    color:black;
+    color: black;
     background-color: white;
 }
 
 .article-body h2 {
-	color: white;
+    color: white;
 }
 
 #disqus_thread {
