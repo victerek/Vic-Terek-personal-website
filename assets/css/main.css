@@ -412,16 +412,23 @@ footer a {
     .page-title {
         display: none;
     }
+    .post-title {
+        display: none;
+    }
     .short-title {
         display: inline-block;
         font-size: 2.1em;
         color: white;
+        padding-top: 0px;
+    }
+    .site-title {
+        font-size: 50px;
     }
 }
 
 /* make the article responsive for more phones */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .canvas-blog article {
         width: 80%;
         font-size: 180%;
@@ -432,7 +439,7 @@ footer a {
     .author {
         font-size: 1.7rem;
     }
-    section>h2 {
+    section > h2 {
         font-size: 2.5rem;
     }
     .rsa-tips h3 {
@@ -443,6 +450,21 @@ footer a {
     }
     figure img {
         width: 100%;
+    }
+    header .site-description {
+        margin-top: 30px;
+    }
+    header .header-icons {
+        margin-top: 30px;
+    }
+    header .header-links {
+        margin-top: 20px;
+    }
+    header .site-title {
+        font-size: 50px;
+    }
+    .blog-page .post-title {
+        display: none;
     }
 }
 
