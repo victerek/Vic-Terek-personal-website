@@ -431,7 +431,7 @@ footer a {
 @media only screen and (min-device-width: 200px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .canvas-blog article {
         width: 80%;
-        font-size: 230%;
+        font-size: 2.5em;
     }
     .page-title {
         font-size: 3rem;
@@ -440,10 +440,10 @@ footer a {
         font-size: 1.7rem;
     }
     section > h2 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     .rsa-tips h3 {
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
     .rsa-example figcaption {
         font-size: 1.7rem;
@@ -690,4 +690,12 @@ p {
     width: 60%;
     transform: none;
     margin: 0 auto;
+}
+
+.main-page header {
+    width: 100%;
+}
+
+.blog-page header {
+    width: 100%;
 }
