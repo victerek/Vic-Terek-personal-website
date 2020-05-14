@@ -431,7 +431,7 @@ footer a {
 @media only screen and (min-device-width: 200px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .canvas-blog article {
         width: 80%;
-        font-size: 180%;
+        font-size: 230%;
     }
     .page-title {
         font-size: 3rem;
