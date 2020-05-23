@@ -643,6 +643,88 @@ p {
     width: 100%;
 }
 
+.first-rsa-image, .second-rsa-image {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.first-rsa-image:hover, .second-rsa-image:hover {
+    opacity: .7;
+}
+
+.rsa-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9);
+}
+
+.rsa-modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rsa-modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Modal animation - Zoom in the modal */
+
+.rsa-modal-content, .rsa-modal-caption {
+    animation: zoom .6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button for modal */
+.rsa-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.rsa-modal-close:hover,
+.rsa-modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .rsa-modal-content {
+        width: 100%;
+    }
+}
+
+/* Responsiveness - mobile-first */
+
 @media only screen and (min-device-width: 500px) {
     /* article page */
     .canvas-blog article {
@@ -663,6 +745,11 @@ p {
     }
     #disqus_thread {
         width: 65%;
+    }
+    .rsa-modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
     }
 }
 
