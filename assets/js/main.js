@@ -139,3 +139,61 @@ function accessibleCanvas() {
 }
 
 window.onload = accessibleCanvas;
+
+
+// Image modal 
+
+let modal = document.getElementsByClassName('rsa-modal')[0];
+
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+let firstRsaImage = document.getElementsByClassName('first-rsa-image')[0];
+let secondRsaImage = document.getElementsByClassName('second-rsa-image')[0];
+let modalImg = document.getElementsByClassName('rsa-modal-content')[0];
+let modalCaption = document.getElementsByClassName('rsa-modal-caption')[0];
+
+firstRsaImage.onclick = function() {
+    this.style.width = "80%";
+    modalImg.style.width = this.style.width;
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalCaption.innerHTML = this.alt;
+}
+
+let responsiveRsaImages = window.matchMedia("(min-width: 500px)");
+
+function matchMediaQuery(responsiveRsaImages) {
+    if (responsiveRsaImages.matches) {
+        secondRsaImage.onclick = function() {
+            this.style.width = "40%";
+        }
+    }
+    else {
+        secondRsaImage.onclick = function() {
+            this.style.width = "100%";
+        }
+        firstRsaImage.onclick = function() {
+            this.style.width = "100%";
+            this.style.height = "50vh";
+        }
+    }
+}
+
+matchMediaQuery(responsiveRsaImages);
+responsiveRsaImages.addListener(matchMediaQuery);
+
+secondRsaImage.onclick = function() {
+    modalImg.style.width = this.style.width;
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalCaption.innerHTML = this.alt;
+}
+
+
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName('rsa-modal-close')[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
