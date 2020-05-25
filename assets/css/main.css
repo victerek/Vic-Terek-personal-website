@@ -502,6 +502,7 @@ mark {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 ol, ul {
@@ -563,7 +564,7 @@ img.icon {
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 15vh;
+    height: 22vh;
 }
 
 .link-to-page {
@@ -619,7 +620,8 @@ p {
 }
 
 .rsa-tips img {
-    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -646,6 +648,7 @@ p {
 .first-rsa-image, .second-rsa-image {
     transition: .3s;
     cursor: pointer;
+    width: 100%;
 }
 
 .first-rsa-image:hover, .second-rsa-image:hover {
@@ -669,7 +672,6 @@ p {
 .rsa-modal-content {
     margin: auto;
     display: block;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -717,12 +719,6 @@ p {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-    .rsa-modal-content {
-        width: 100%;
-    }
-}
-
 /* Responsiveness - mobile-first */
 
 @media only screen and (min-device-width: 500px) {
@@ -737,9 +733,6 @@ p {
     .page-title {
         font-size: 2em;
     }
-    .rsa-tips img {
-        min-width: 50%;
-    }
     button#to-the-top {
         font-size: 1em;
     }
@@ -749,7 +742,10 @@ p {
     .rsa-modal-content {
         margin: auto;
         display: block;
-        width: 80%;
+        /* width: 80%; */
+    }
+    .second-rsa-image {
+        width: 70%;
     }
 }
 
