@@ -152,8 +152,12 @@ let modalImg = document.getElementsByClassName('rsa-modal-content')[0];
 let modalCaption = document.getElementsByClassName('rsa-modal-caption')[0];
 
 firstRsaImage.onclick = function() {
-    this.style.width = "80%";
-    modalImg.style.width = this.style.width;
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalCaption.innerHTML = this.alt;
+}
+
+secondRsaImage.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     modalCaption.innerHTML = this.alt;
@@ -164,31 +168,33 @@ let responsiveRsaImages = window.matchMedia("(min-width: 500px)");
 function matchMediaQuery(responsiveRsaImages) {
     if (responsiveRsaImages.matches) {
         secondRsaImage.onclick = function() {
-            this.style.width = "40%";
-        }
-    }
-    else {
-        secondRsaImage.onclick = function() {
-            this.style.width = "100%";
+            modalImg.style.width = "45%";
+            modal.style.display = "block";
+            modalImg.src = this.src;
         }
         firstRsaImage.onclick = function() {
-            this.style.width = "100%";
-            this.style.height = "50vh";
+            modalImg.style.width = "80%";
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    } 
+    else {
+        secondRsaImage.onclick = function() {
+            this.style.width = "85%";
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+        firstRsaImage.onclick = function() {
+            this.style.width = "95%";
+            this.style.height = "35vh";
+            modal.style.display = "block";
+            modalImg.src = this.src;
         }
     }
 }
 
 matchMediaQuery(responsiveRsaImages);
 responsiveRsaImages.addListener(matchMediaQuery);
-
-secondRsaImage.onclick = function() {
-    modalImg.style.width = this.style.width;
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalCaption.innerHTML = this.alt;
-}
-
-
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName('rsa-modal-close')[0];
