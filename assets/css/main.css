@@ -19,7 +19,7 @@ button, hr, input {
 
 .fa {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1em;
     font-family: FontAwesome, Helvetica, sans-serif;
     line-height: 1;
     text-rendering: auto;
