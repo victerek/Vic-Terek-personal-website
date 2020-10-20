@@ -374,9 +374,7 @@ footer a {
     font-family: 'Montserrat', sans-serif;
     z-index: 1;
     color: #fff;
-    top: 50%;
-    left: 50%;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 .page-title {
@@ -475,7 +473,7 @@ h3 {
 }
 
 figure {
-    margin: 1.25em 0;
+    margin-bottom: 0;
     page-break-inside: avoid;
 }
 
@@ -483,10 +481,6 @@ figcaption {
     opacity: 0.5;
     font-size: 85%;
     margin-top: 0.5em;
-}
-
-mark {
-    background-color: transparent;
 }
 
 img {
@@ -600,8 +594,9 @@ p {
 }
 
 .rsa-tips mark {
-    color: black;
-    background-color: white;
+    font-weight: 900;
+    color: white;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFD0AE 65%);
 }
 
 .rsa-tips h3 {
