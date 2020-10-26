@@ -61,6 +61,8 @@ button, hr, input {
 
 /*! * end of Font Awesome */
 
+/* Basic styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -101,10 +103,12 @@ a img {
     border: none;
 }
 
+/* Basic styles end */
+
 /* Background effect */
 
 #particles-js {
-    background: #574150;
+    background: #6d355b;
     display: flex;
     vertical-align: bottom;
     min-height: 100vh;
@@ -130,18 +134,17 @@ header {
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
 header .site-title {
-    font-size: 60px;
-    margin-top: 0px;
-    padding-top: 0px;
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
     font-family: 'Elephant', serif;
     display: block;
     line-height: 1;
-    color: #fff
+    color: #fff;
 }
 
 header .site-description {
@@ -160,9 +163,9 @@ header .site-description {
 }
 
 .header-icons a {
-    border: none !important;
+    border: none;
     padding: none;
-    margin: none
+    margin: none;
 }
 
 .down, .header-icons .icon {
@@ -178,7 +181,8 @@ header .site-description {
     width: 20px;
     font-size: 20px;
     margin: 5px;
-    border: 2px solid #fff
+    border: 2px solid #fff;
+    font-style: initial;
 }
 
 .header-icons .icon:active, .header-icons .icon:hover {
@@ -187,7 +191,7 @@ header .site-description {
 }
 
 .header-links {
-    margin: 10px
+    margin: 10px;
 }
 
 .header-links .link {
@@ -210,29 +214,26 @@ header .site-description {
     max-width: 960px
 }
 
-#about svg {
-    width: 60px !important;
-    height: auto
-}
-
 /* Homepage - user section */
 
 .user {
     text-align: center;
-    font-size: 60px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .user p {
-    font-size: 16px
+    font-size: 0.6em;
 }
 
 .user-details {
     text-align: center;
     margin: 5px auto;
+}
+
+.about h2, .user h2 {
+    margin-top: 0;
 }
 
 article header {
@@ -306,6 +307,7 @@ article header {
     animation: pulse 1.3s infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
+    font-style: initial;
 }
 
 .tech {
@@ -347,7 +349,7 @@ footer a {
     font-size: 29px;
     font-weight: 700;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 60%;
     color: white;
 }
 
@@ -394,7 +396,7 @@ footer a {
 
 .article-body h2 {
     color: #d8aaaa;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .author {
@@ -589,14 +591,17 @@ p {
     text-decoration: underline;
 }
 
-.rsa-benefits em {
+.rsa-benefits em, mark {
     font-weight: bold;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 90%, #FFD0AE 90%)
+}
+
+.rsa-benefits em {
+    font-style: initial;
 }
 
 .rsa-tips mark {
-    font-weight: 900;
     color: white;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 90%, #FFD0AE 90%);
 }
 
 .rsa-tips h3 {
