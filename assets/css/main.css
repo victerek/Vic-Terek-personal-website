@@ -211,7 +211,7 @@ header .site-description {
     font-size: 120%;
     width: 90%;
     margin: 0 auto;
-    max-width: 960px
+    max-width: 960px;
 }
 
 /* Homepage - user section */
@@ -536,6 +536,8 @@ img.icon {
     font-size: 0.8em;
 }
 
+/* Post page */
+
 .page-cover-image {
     display: block;
     object-fit: cover;
@@ -609,19 +611,7 @@ p {
     color: white;
 }
 
-#disqus_thread {
-    position: relative;
-    width: 80%;
-    font-size: 40px;
-    transform: none;
-    margin: 0 auto;
-}
-
-.main-page header {
-    width: 100%;
-}
-
-.blog-page header {
+.main-page, .blog-page header {
     width: 100%;
 }
 
@@ -665,6 +655,17 @@ p {
     height: 150px;
 }
 
+/* End of Post page */
+
+/* Disqus */
+#disqus_thread {
+    position: relative;
+    width: 70%;
+    font-size: 40px;
+    transform: none;
+    margin: 0 auto;
+}
+
 /* Modal animation - Zoom in the modal */
 
 .rsa-modal-content, .rsa-modal-caption {
@@ -704,7 +705,7 @@ p {
     /* article page */
     .canvas-blog article {
         font-size: 1.2em;
-        width: 80%;
+        width: 70%;
     }
     .page-cover-image {
         height: auto;
