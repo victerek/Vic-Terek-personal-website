@@ -700,16 +700,26 @@ p {
 @media only screen and (min-device-width: 500px) {
     /* article page */
     .canvas-blog article {
-        font-size: 1.2em;
-        width: 70%;
+        font-size: 1em;
+        width: 80%;
     }
     .page-cover-image {
-        height: auto;
-        max-width: 100%;
+        display: none;
     }
     .page-title {
         font-size: 1.7em;
         width: 100%;
+    }
+    figcaption {
+        display: none;
+    }
+    .rsa-tips figure {
+        min-width: 100%;
+        height: auto;
+    }
+    .callout {
+        width: 80%;
+        margin: 0 auto;
     }
     button#to-the-top {
         font-size: 1em;
@@ -745,5 +755,23 @@ p {
     .user {
         flex-wrap: nowrap;
         font-size: 1.875rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .canvas-blog article {
+        font-size: 1.2em;
+        width: 70%;
+    }
+    .page-cover-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    figcaption {
+        display: block;
+    }
+    .callout {
+        width: 70%;
     }
 }
