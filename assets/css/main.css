@@ -103,6 +103,11 @@ a img {
     border: none;
 }
 
+::selection {
+    color: white;
+    background: rgb(131, 94, 62);
+}
+
 /* Basic styles end */
 
 /* Background effect */
@@ -420,6 +425,8 @@ button#to-the-top {
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #886973 #6e355a;
 }
 
 a, a.visited {
