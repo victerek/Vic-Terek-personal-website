@@ -658,6 +658,10 @@ p {
     height: 150px;
 }
 
+.pdf-guide {
+
+}
+
 /* End of Post page */
 
 /* Disqus */
@@ -769,6 +773,7 @@ p {
     .canvas-blog article {
         font-size: 1.2em;
         width: 70%;
+        z-index: 1000;
     }
     .page-cover-image {
         display: block;
