@@ -68,7 +68,7 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
+    color: #421414;
     font-family: 'Antic Slab', serif;
 }
 
@@ -155,7 +155,7 @@ header .site-title {
 header .site-description {
     font-size: 30px;
     display: block;
-    line-height: 1;
+    line-height: 1.5;
     color: #fff;
     margin: 10px 0;
 }
@@ -164,7 +164,8 @@ header .site-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center
+    text-align: center;
+    margin-top: 2em;
 }
 
 .header-icons a {
@@ -217,6 +218,8 @@ header .site-description {
     width: 90%;
     margin: 0 auto;
     max-width: 960px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* Homepage - user section */
@@ -226,15 +229,18 @@ header .site-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .user p {
-    font-size: 0.6em;
+    font-size: 19.2px;
+    line-height: initial;
 }
 
 .user-details {
     text-align: center;
     margin: 5px auto;
+    max-width: 90%;
 }
 
 .about h2, .user h2 {
@@ -244,6 +250,10 @@ header .site-description {
 article header {
     position: inherit;
     transform: none;
+}
+
+.user h2 {
+    font-weight: bold;
 }
 
 /* end of Header section on the home page */
@@ -308,7 +318,7 @@ article header {
     flex: 1 1 0;
 }
 
-.tech h2, .tech h3, .user-details h1, body {
+.tech h3, .user-details h1, body {
     font-weight: 400
 }
 
@@ -570,7 +580,7 @@ p {
 }
 
 .callout {
-    background: rgb(160, 159, 125);
+    background: #886973;
     display: flex;
 }
 
@@ -612,6 +622,10 @@ p {
 
 .article-body h2 {
     color: white;
+}
+
+.article-body b {
+    background: rgb(160, 159, 125);
 }
 
 .main-page, .blog-page header {
